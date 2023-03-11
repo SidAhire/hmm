@@ -382,7 +382,7 @@
    function showTime() {
        let date = new Date();
        let Y2 = date.getFullYear();
-       let M2 = date.getMonth();
+       let M2 = date.getMonth() + 1;
        let D2 = date.getDate();
        var Month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
        var D1 = 01;
@@ -390,7 +390,7 @@
        var Y1 = 2005;
        
        if (D1 > D2) {
-           D2 = D2 + Month[M2 - 1];
+           D2 = D2 + Month[M2 - 2];
            M2 = M2 - 1;
        }
        if (M1 > M2) {
