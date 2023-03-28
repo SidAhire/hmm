@@ -421,27 +421,21 @@
     <script src="/Js/js.js"></script>
     <script src="/Js/style-switcher.js"></script>
 
-    <!-- <script>
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-    </script> -->
 
 
     <script>
         window.addEventListener('load', function () {
             var preloader = document.querySelector('#preloader');
-            preloader.classList.add('123');
+            preloader.classList.add('hf');
         });
 
     </script>
 
 
     <style>
-        .123 {
+        .hf {
             animation-name: fadeOut;
-            animation-duration: 3s;
+            animation-duration: 2s;
             animation-fill-mode: forwards;
         }
 
@@ -452,6 +446,7 @@
 
             to {
                 opacity: 0;
+                z-index: -155;
             }
         }
     </style>
