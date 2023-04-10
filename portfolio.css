@@ -1,0 +1,120 @@
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg--black-100: #fdf9ff;
+    --bg--black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+
+body.dark {
+
+    --bg-black-900: #151515;
+    --bg--black-100: #222222;
+    --bg--black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+}
+
+.portfolio .portfolio-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.portfolio .portfolio-title h2{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portfolio .portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-item-inner{
+    border: 6px solid var(--bg--black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .portfolio-item-inner .portfolio-img img{
+     width: 100%;
+     display: block;
+}
+
+
+
+.single-service {
+    flex-basis: 33.33%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.single-service img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #393939);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-service:hover .overlay {
+    opacity: 1;
+
+}
+
+.service-dec {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.service-dec p {
+    font-size: 14px;
+}
+
+.single-service:hover .service-dec {
+    bottom: 30%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 770px) {
+    .single-service {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .service-dec p {
+        font-size: 12px;
+    }
+
+    hr {
+        margin: 5px auto;
+    }
+
+    .single-service:hover .service-dec {
+        bottom: 40% !important;
+    }
+}
