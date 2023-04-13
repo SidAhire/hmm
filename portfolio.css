@@ -33,7 +33,7 @@ body.dark {
     border: 6px solid var(--bg--black-100);
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .portfolio .portfolio-item-inner .portfolio-img img{
      width: 100%;
@@ -62,7 +62,7 @@ body.dark {
     position: absolute;
     top: 0;
     border-radius: 7px;
-    cursor: pointer;
+    /* cursor: pointer; */
     background: linear-gradient(rgba(0, 0, 0, 0.5), #393939);
     opacity: 0;
     transition: 1s;
@@ -94,7 +94,19 @@ hr {
 .service-dec p {
     font-size: 14px;
 }
-
+.service-dec a{
+        font-size: 12px;
+        margin-top: 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+        display: inline-block;
+        white-space: nowrap;
+        border: none;
+        background: var(--skin-color);
+        transition: all 0.3s ease;
+        cursor: pointer;
+}
 .single-service:hover .service-dec {
     bottom: 30%;
     opacity: 1;
